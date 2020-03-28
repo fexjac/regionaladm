@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*Header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 1rem ;
+    background-color: rgba(33, 160, 231, 100);
+    
+    webkit-box-shadow: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+    -moz-box-shadow: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+    box-shadow: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+}
+
+.logo {
+    width: 33%;
+}
+.logo img {
+    max-width: 100%;
+}
+/*Menu profile*/
+.menu {
+    width: 15%;
+    height: 100vh;
+    background-color: #065886;
+    color: #ffffff;
+    position: absolute;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.profile-img{
+    display: block;
+    width: 55px;
+    padding-right: 1rem;
+    
+}
+
+.profile-img img {
+
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.status{
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/*Menu List*/
+.link-nav {
+    color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    display: list-item;
+}
+
+.link-nav-arrow::after {
+    content:'\f107';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free"; 
+    align-content: center;
+    padding-left: 1rem;
+}
+
+.list-nav {
+    padding-top: 1rem;
+}
+
+.list-nav-second {
+    display: none;
+}
+
+.icon {
+    width: 1.5rem;
+}
