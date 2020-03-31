@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*Header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 1rem ;
+    background-color: rgba(33, 160, 231, 100);
+    
+    -webkit-box-direction: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+    -moz-box-shadow: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+    box-shadow: 0px 2px 10px -9px rgba(0, 0, 0, 81);
+}
+
+.logo {
+    width: 33%;
+}
+.logo img {
+    max-width: 100%;
+}
+/*Menu profile*/
+.menu {
+    width: 15%;
+    height: 100vh;
+    background-color: #065886;
+    color: #ffffff;
+    position: absolute;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.profile-img{
+    display: block;
+    width: 55px;
+    padding-right: 1rem;
+    
+}
+
+.profile-img img {
+
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.status{
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.status::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/*Menu List Primario*/
+.link-nav {
+    color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    display: list-item;
+}
+
+.link-nav-arrow::after {
+    content:'\f107';
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free"; 
+    margin-left: 1.5rem;
+
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.link-nav-arrow.arrow::after{
+    transform: rotate(0);
+}
+
+.list-nav {
+    padding-top: 1rem;
+}
+
+.hide {
+    display: none;
+}
+.icon {
+    width: 1.5rem;
+}
+
+/*Menu List Secundario*/
+.item-nav-second a {
+    color: #ffffff;
+    padding: 0 0 1rem 2.7rem;
+    text-decoration: none;
+    display: list-item;
+}
+
+/*Corpo do site*/
+.body-content {
+    display: inline-flex;
+    padding-top: 80px;
+    padding-left: 25%;
+    width: 80%;
+    background-color: #b8d6e8;
+    
+}
